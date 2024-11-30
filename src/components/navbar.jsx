@@ -18,7 +18,6 @@ export const Navbar = ({language, setLanguage}) => {
                     <span className={`me-1 px-1 rounded ${language ? "bg-gray-300" : ""} transition-all`}>es</span>
                     <span className={`ms-1 px-1 rounded ${!language ? "bg-gray-300" : ""} transition-all`}>en</span>
                 </button>
-                {/* <button className="text-lg" >Idioma</button> */}
             </div>
         </nav>
     )
