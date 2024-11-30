@@ -1,12 +1,12 @@
 import { ABOUTME } from "../constants";
 import profileImg from "../assets/IMG_0931.png"
 
-export const Hero = () => {
+export const Hero = ({language}) => {
     return (
         <div className="border-b border-neutral-900 pb-4 lg:mb-32">
             <div className="flex flex-wrap">
                 <div className="w-full lg:w-1/2">
-                    <div className="flex flex-col items-center lg:items-start">
+                    <div className="flex flex-col  lg:items-start">
                         <h1 className="pb-16 text-6xl font-thin -tracking-tight lg:mt-16 lg:text-7xl">
                             Javier Jiménez
                         </h1>
@@ -14,7 +14,7 @@ export const Hero = () => {
                             Full Stack Developer
                         </span>
                         <p className="my-2 max-w-xl py-6 font-light tracking-tight">
-                            {ABOUTME['es']}
+                            {language ? ABOUTME['es'] : ABOUTME['en']}
                         </p>
                     </div>
                 </div>

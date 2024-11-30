@@ -1,18 +1,14 @@
 import project1 from "../projects-imgs/sharetrips.png"
 
 export const ABOUTME = {
-    es: `Hola! Soy Javi, desarrollador full-stack motivado e 
-    ingenioso con pasión por crear aplicaciones web. 
-    Experiencia en JavaScript, React, Python, Node y SCRUM 
-    para afrontar las complejidades del desarrollo de software. 
-    Con mi interés por el aprendizaje continuo y dedicación a la calidad, 
-    soy un activo valioso para cualquier equipo en busca de soluciones de 
-    software innovadoras.`,
-    en: `Hi! I'm Javi, a motivated and resourceful full-stack developer with a 
-    passion for building web applications. Experienced in JavaScript, React, 
-    Python, Node and SCRUM to tackle the complexities of software development. 
-    With my interest in continuous learning and commitment to quality, I am a 
-    valuable asset to any team seeking innovative software solutions.`
+    es: `¡Hola! Soy Javi, un desarrollador full-stack apasionado por transformar
+        ideas en aplicaciones web impactantes. Domino JavaScript, React, Python y Node
+        para crear soluciones dinámicas y eficaces. Siempre buscando aprender y mejorar,
+        aporto energía y creatividad a cada proyecto.`,
+    en: `Hi! I'm Javi, a full-stack developer driven by the challenge of turning ideas
+        into impactful web applications. Skilled in JavaScript, React, Python, and Node,
+        I deliver dynamic and efficient solutions. With a passion for growth and innovation,
+        I bring energy and creativity to every project.`
 }
 
 export const PROJECTS = [
@@ -44,7 +40,10 @@ export const PROJECTS = [
 ]
 
 export const CONTACT = {
-    address: "Córdoba, España",
+    address: {
+        es: "Córdoba, España",
+        en: "Córdoba, Spain",
+    },
     phoneNumber: "+34 633 09 43 26",
     email: "javierjimenezcarralero@gmail.com"
 };

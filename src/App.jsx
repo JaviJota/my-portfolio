@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import { Contact } from "./components/contact";
 import { Hero } from "./components/hero";
 import { Navbar } from "./components/navbar";
@@ -5,6 +7,8 @@ import { Projects } from "./components/projects";
 import { Technologies } from "./components/technologies";
 
 const App = () => {
+  const [language, setLanguage] = useState(true)
+
   return (
     <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900">
       <div className="fixed top-0 -z-10 h-full w-full">
@@ -16,11 +20,11 @@ const App = () => {
         ></div>
       </div>
       <div className="container mx-auto px-8">
-        <Navbar />
-        <Hero />
-        <Technologies />
-        <Projects />
-        <Contact />
+        <Navbar language={language} setLanguage={setLanguage} />
+        <Hero language={language} />
+        <Technologies language={language} />
+        <Projects language={language} />
+        <Contact language={language} />
       </div>
     </div>
   );
