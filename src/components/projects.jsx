@@ -5,9 +5,9 @@ export const Projects = ({language}) => {
     return (
         <div className="border-b border-neutral-900 pb-4 mb-20">
             <h1 className="my-20 text-center text-4xl">{language ? "Proyectos" : "Projects"}</h1>
-            <div className="flex flex-wrap lg:justify-center">
+            <div className="flex flex-col lg:items-center">
                 {PROJECTS.map((project) => (
-                    <div className="flex flex-wrap mb-5 lg:justify-center lg:w-1/2" key={project.id}>
+                    <div className="flex flex-wrap mb-14 lg:justify-center lg:w-1/2" key={project.id}>
                         <img className=" rounded-md" src={project.image} alt={language ? project.es.title : project.en.title} />
                         <div className="mt-6">
                             <a href={project.url} target="_blank">

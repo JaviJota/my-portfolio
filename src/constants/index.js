@@ -1,4 +1,5 @@
 import project1 from "../projects-imgs/sharetrips.png"
+import jetadirecta from "../projects-imgs/jetadirecta.png"
 
 export const ABOUTME = {
     es: `¡Hola! Soy Javi, un desarrollador full-stack apasionado por transformar
@@ -13,7 +14,7 @@ export const ABOUTME = {
 
 export const PROJECTS = [
     {
-        id: crypto.randomUUID,
+        id: crypto.randomUUID(),
         technologies: ["React", "HTML", "CSS", "JavaScript", "Python", "PostgreSQL"],
         image: project1,
         url: "https://github.com/JaviJota/Sharetrips",
@@ -29,12 +30,34 @@ export const PROJECTS = [
                 de nuevas rutas.`,
             },
         en: {
-            title: "ShareTrips",
+            title: "JetaDirecta - Discord Bot",
             description: `Web application for sharing travel itineraries
                 where users create routes using the Google Maps API, add images 
                 of visited places, and share their itineraries with others. Users 
                 can also search for itineraries from other creators and view profiles, 
                 promoting the exchange of experiences and exploration of new routes.`,
+        }
+    },
+    {
+        id: crypto.randomUUID(),
+        technologies: ["JavaScript", "NodeJS", "Discord API", "Riot Games API"],
+        image: jetadirecta,
+        url: "https://github.com/JaviJota/JetaDirecta-DiscordBot",
+        es: {
+            title: "JetaDirecta - Discord Bot",
+            description: `Este bot fue desarrollado para el streamer de 
+                Twitch Toad Amarillo (https://www.twitch.tv/toadamarillo). 
+                Su función principal es monitorear partidas de jugadores 
+                profesionales de League of Legends utilizando la API de Riot Games 
+                y enviar alertas automáticas a un canal de Discord mediante la API 
+                de Discord.`,
+        },
+        en: {
+            title: "ShareTrips",
+            description: `This bot was developed for the Twitch streamer Toad Amarillo 
+            (https://www.twitch.tv/toadamarillo). Its main function is to monitor professional 
+            League of Legends players' matches using the Riot Games API and send automatic 
+            alerts to a Discord channel via the Discord API.`,
         }
     },
 ]
