@@ -7,7 +7,8 @@ import { Projects } from "./components/projects";
 import { Technologies } from "./components/technologies";
 
 const App = () => {
-  const [language, setLanguage] = useState(true)
+  const languages = ['es', 'en']
+  const [language, setLanguage] = useState(languages[0])
 
   return (
     <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900">
@@ -20,7 +21,7 @@ const App = () => {
         ></div>
       </div>
       <div className="container mx-auto px-8">
-        <Navbar language={language} setLanguage={setLanguage} />
+        <Navbar language={language} setLanguage={setLanguage} languages={languages}/>
         <Hero language={language} />
         <Technologies language={language} />
         <Projects language={language} />

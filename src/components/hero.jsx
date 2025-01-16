@@ -1,5 +1,6 @@
 import { ABOUTME } from "../constants";
 import profileImg from "../assets/IMG_0931.png"
+import { motion } from "framer-motion";
 
 export const Hero = ({language}) => {
     return (
@@ -11,10 +12,11 @@ export const Hero = ({language}) => {
                             Javier Jiménez
                         </h1>
                         <span className="bg-gradient-to-r from-cyan-300 via-cyan-500 to-blue-300 bg-clip-text text-3xl tracking-tight text-transparent">
-                            Full Stack Developer
+                            {language === 'es' ? 'Desarrollador Full Stack' : 'Full Stack Developer'}
+                            
                         </span>
                         <p className="my-2 max-w-xl py-6 font-light tracking-tight">
-                            {language ? ABOUTME['es'] : ABOUTME['en']}
+                            {language === 'es' ? ABOUTME['es'] : ABOUTME['en']}
                         </p>
                     </div>
                 </div>

@@ -1,7 +1,10 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa6"
 import logo from "../assets/jj-logo.png"
+import { motion } from "framer-motion"
+import { button } from "framer-motion/client";
 
-export const Navbar = ({language, setLanguage}) => {
+export const Navbar = ({language, setLanguage, languages}) => {
+
     return (
         <nav className="mb-20 flex items-center justify-between py-6">
             <div className="flex flex-shrink-0 items-center">
@@ -14,10 +17,28 @@ export const Navbar = ({language, setLanguage}) => {
                 <a href="https://github.com/JaviJota" target="_blank">
                     <FaGithub />
                 </a>
-                <button className="text-sm bg-gray-500 rounded px-1.5 py-1" onClick={() => setLanguage(!language)}>
-                    <span className={`me-1 px-1 rounded ${language ? "bg-gray-300" : ""} transition-all`}>es</span>
-                    <span className={`ms-1 px-1 rounded ${!language ? "bg-gray-300" : ""} transition-all`}>en</span>
-                </button>
+                <div className="bg-gray-500 text-sm rounded">
+                    {languages.map((lang, index) => (
+                        <button
+                            onClick={() => setLanguage(lang)}
+                            key={index}
+                            className={`relative px-1.5 py-1`}
+                        >   
+                            {language === lang && (
+                                <motion.div
+                                    layoutId="es-bg"
+                                    className={`absolute inset-1 z-10 bg-gray-300`}
+                                    style={{
+                                        borderRadius: 4,
+                                    }}
+                                    transition={{type: "spring", duration: 0.8, bounce: 0.2}}
+                                    >
+                                </motion.div>)
+                            }
+                            {lang}
+                        </button>
+                    ))}
+                </div>
             </div>
         </nav>
     )
