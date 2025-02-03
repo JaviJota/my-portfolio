@@ -11,10 +11,10 @@ export const Navbar = ({language, setLanguage, languages}) => {
                 <img src={logo} className="w-9 h-9" alt="logo" />
             </div>
             <div className="my-8 ms-8 lg:me-8 flex items-center justify-center gap-4 text-2xl">
-                <a href="https://www.linkedin.com/in/javierjimenezc1/" target="_blank">
+                <a href="https://www.linkedin.com/in/javierjimenezc1/" aria-label="Ir a mi perfil de LinkedIn" target="_blank">
                     <FaLinkedin />
                 </a>
-                <a href="https://github.com/JaviJota" target="_blank">
+                <a href="https://github.com/JaviJota" aria-label="Ir a mi perfil de Github" target="_blank">
                     <FaGithub />
                 </a>
                 <div className="bg-gray-500 text-sm rounded">
@@ -23,6 +23,7 @@ export const Navbar = ({language, setLanguage, languages}) => {
                             onClick={() => setLanguage(lang)}
                             key={index}
                             className={`relative px-1.5 py-1`}
+                            aria-label="Cambiar el idioma de la página"
                         >   
                             {language === lang && (
                                 <motion.div

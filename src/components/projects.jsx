@@ -10,7 +10,7 @@ export const Projects = ({language}) => {
                     <div className="flex flex-wrap mb-14 lg:justify-center lg:w-1/2" key={project.id}>
                         <img className=" rounded-md" src={project.image} alt={language === 'es' ? project.es.title : project.en.title} />
                         <div className="mt-6">
-                            <a href={project.url} target="_blank">
+                            <a href={project.url} aria-label="Ir al repositiorio del proyecto" target="_blank">
                                 <h3 className="text-3xl font-semibold flex items-center hover:text-blue-300">{project.es.title} <LuExternalLink className="ms-1 text-xl"/></h3> 
                             </a>
                             <p className="my-4">{language === 'es' ? project.es.description : project.en.description}</p>
