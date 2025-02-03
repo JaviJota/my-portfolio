@@ -6,4 +6,17 @@
 
 :root {
     font-family: 'Poppins', sans-serif;
+    caret-color: transparent;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #0d0a1b;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: #4b4a63;
 }
