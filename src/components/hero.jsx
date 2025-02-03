@@ -1,6 +1,5 @@
 import { ABOUTME } from "../constants";
 import profileImg from "../assets/IMG_0931.png"
-import { motion } from "framer-motion";
 
 export const Hero = ({language}) => {
     return (
@@ -22,7 +21,7 @@ export const Hero = ({language}) => {
                 </div>
                 <div className="w-full lg:w-1/2 lg:p-8">
                     <div className="flex justify-center">
-                        <img className="w-96 h-96 rounded-xl opacity-85 object-cover" src={profileImg} alt="Javier Jiménez" />
+                        <img className="w-96 h-96 rounded-xl opacity-85 object-cover" src={profileImg} alt="Javier Jiménez, desarrollador web full stack" />
                     </div>
                 </div>
             </div>
