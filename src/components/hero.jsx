@@ -1,5 +1,5 @@
 import { ABOUTME } from "../constants";
-import profileImg from "../assets/IMG_0931.png"
+import profileImg from "../assets/IMG_0931.webp"
 
 export const Hero = ({language}) => {
     return (
