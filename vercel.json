@@ -1,0 +1,10 @@
+{
+    "redirects": [
+      {
+        "source": "/:path*",
+        "destination": "https://www.javierjimenezcarralero.com/:path*",
+        "permanent": true
+      }
+    ]
+  }
+  
