@@ -1,5 +1,6 @@
 import project1 from "../projects-imgs/sharetrips.png"
 import jetadirecta from "../projects-imgs/jetadirecta.png"
+import mjWebsite from "../projects-imgs/mj-procuradora-website.png"
 
 export const ABOUTME = {
     es: `¡Hola! Soy Javi, un desarrollador full-stack apasionado por transformar
@@ -30,7 +31,7 @@ export const PROJECTS = [
                 de nuevas rutas.`,
             },
         en: {
-            title: "JetaDirecta - Discord Bot",
+            title: "ShareTrips",
             description: `Web application for sharing travel itineraries
                 where users create routes using the Google Maps API, add images 
                 of visited places, and share their itineraries with others. Users 
@@ -53,11 +54,32 @@ export const PROJECTS = [
                 de Discord.`,
         },
         en: {
-            title: "ShareTrips",
+            title: "JetaDirecta - Discord Bot",
             description: `This bot was developed for the Twitch streamer Toad Amarillo 
             (https://www.twitch.tv/toadamarillo). Its main function is to monitor professional 
             League of Legends players' matches using the Riot Games API and send automatic 
             alerts to a Discord channel via the Discord API.`,
+        }
+    },
+    {
+        id: crypto.randomUUID(),
+        technologies: ["Astro", "HTML5", "TailwindCSS", "JavaScript", "Resend"],
+        image: mjWebsite,
+        url: "https://www.procuradoracordoba.com",
+        es: {
+            title: "MJ-Procuradora - Website",
+            description: `Sitio web profesional de María José Carralero Medina, procuradora en Córdoba con una amplia 
+            trayectoria en el ámbito jurídico. La plataforma ofrece información detallada sobre sus servicios, incluyendo 
+            representación procesal, gestión de documentación judicial y asesoramiento legal. Con un diseño moderno 
+            y optimizado para la experiencia del usuario, la web permite a clientes y abogados contactar fácilmente 
+            a través del formulario de contacto.`,
+        },
+        en: {
+            title: "MJ-Procuradora - Website",
+            description: `Professional website of María José Carralero Medina, a court representative in Córdoba 
+            with extensive experience in the legal field. The platform provides detailed information about her services, 
+            including legal representation, judicial document management, and legal advice. With a modern design optimized 
+            for user experience, the website allows clients and lawyers to easily get in touch through the contact form.`,
         }
     },
 ]

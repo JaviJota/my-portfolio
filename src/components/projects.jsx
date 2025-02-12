@@ -7,7 +7,7 @@ export const Projects = ({language}) => {
             <h1 className="my-20 text-center text-4xl">{language === 'es' ? "Proyectos" : "Projects"}</h1>
             <div className="flex flex-col lg:items-center">
                 {PROJECTS.map((project) => (
-                    <div className="flex flex-wrap mb-14 lg:justify-center lg:w-1/2" key={project.id}>
+                    <div className="flex flex-wrap mb-14 lg:justify-center lg:w-1/2 transition-all hover:scale-105" key={project.id}>
                         <img className=" rounded-md" src={project.image} alt={language === 'es' ? project.es.title : project.en.title} />
                         <div className="mt-6">
                             <a href={project.url} aria-label="Ir al repositiorio del proyecto" target="_blank">
